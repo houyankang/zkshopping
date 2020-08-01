@@ -2,6 +2,7 @@ package com.qf.config;
 
 import com.qf.interceptor.TokenInterceptor;
 import com.qf.util.JedisCore;
+import com.qf.util.JedisUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
@@ -13,6 +14,7 @@ public class TokenInterceptorConfig implements WebMvcConfigurer {
 
     @Autowired
     private JedisCore jedisCore;
+    //private JedisCore jedisCore= JedisUtil.getJedisCore();
 
 
 

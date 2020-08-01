@@ -1,6 +1,7 @@
 package com.qf.dao;
 
 import com.qf.dto.RegisterUserDto;
+import com.qf.dto.UpdateUserDto;
 import com.qf.pojo.User;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Param;
@@ -48,7 +49,7 @@ public interface UserDao {
     int insertUser(User user);
 
     /**
-     * 根据用户手机号或者邮箱查询
+     * 根据用户邮箱查询
      *
      * @param account 用户登录账号
      * @return
@@ -74,4 +75,7 @@ public interface UserDao {
      * @return
      */
     User selectUserByEmail(String email);
+
+    int  updateUser(UpdateUserDto updateUserDto);
+
 }

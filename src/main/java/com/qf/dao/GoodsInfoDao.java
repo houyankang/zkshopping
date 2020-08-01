@@ -1,5 +1,6 @@
 package com.qf.dao;
 
+import com.qf.dto.GoodsDto;
 import com.qf.dto.Lev1TypeDto;
 import com.qf.dto.Lev2TypeDto;
 import com.qf.dto.Lev3TypeDto;
@@ -20,9 +21,9 @@ public interface GoodsInfoDao {
 
     List<Lev1TypeDto> queryGoodsType();
 
-    List<Lev1TypeDto> queryGoodsByFirstLevel();
+    List<GoodsDto> queryGoodsByFirstLevel(Integer id);
 
-    List<Lev2TypeDto> queryGoodsBySecondLevel();
+    List<GoodsDto> queryGoodsBySecondLevel(Integer id);
 
-    List<Lev3TypeDto> queryGoodsByThirdLevel();
+    List<GoodsDto> queryGoodsByThirdLevel(Integer id);
 }

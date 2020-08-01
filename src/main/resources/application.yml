@@ -3,3 +3,21 @@ server:
 spring:
   profiles:
     active: dev
+
+logging:
+  level:
+    io.swagger.models.parameters.AbstractSerializableParameter: error
+
+swagger:
+  basic:
+    enable: true
+    username: admin
+    password: diyizu
+
+#security:
+#  basic:
+#    enabled: true
+#    path: /doc.html
+#  user:
+#    name: admin
+#    password: diyizu

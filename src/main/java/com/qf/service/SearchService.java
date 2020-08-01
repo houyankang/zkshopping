@@ -12,4 +12,12 @@ public interface SearchService {
     R getStoreByName(String storeName);
 
     R searchGoodsInStore(SearchGoodsInStoreDto searchGoodsInStoreDto);
+
+    R searchGoods(String key);
+
+    R searchStore(String key);
+
+    R getStoreById(Integer storeId);
+
+    R searchByTypeId(Integer typeId);
 }
